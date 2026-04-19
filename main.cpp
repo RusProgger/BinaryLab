@@ -25,8 +25,6 @@ void mainMenu()
     std::cout << "  1) English\n";
     std::cout << "  2) Russian\n";
     std::cout << "  0) Exit\n\n";
-
-    std::cout << "Your choice: ";
 }
 
 
@@ -37,6 +35,24 @@ int main() {
 
     // mainMenu
     mainMenu();
+
+    int number;
+
+    // choice
+
+    std::cout << "Your choice: ";
+    std::cin >> number;
+
+    // if(number == 1) {
+    //     std::cout << "Hello";
+    //     // add function
+    // } else if(number == 2) {
+    //     localeRus();
+    //     std::cout << "Привет";
+    // } else if(number == 0) {
+    //     std::cout << "\nExit to program..."; 
+    //     return 0;
+    // }
     
 
 
