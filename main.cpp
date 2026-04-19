@@ -28,9 +28,6 @@ void mainMenu()
 }
 
 
-
-
-
 int main() {
 
     // mainMenu
@@ -40,7 +37,7 @@ int main() {
 
     // choice
 
-    while(true) {
+    do {
         std::cout << "Your choice: ";
         std::cin >> number;
 
@@ -51,25 +48,32 @@ int main() {
             continue;
         }
 
-        if(number == 1 || number == 2 || number == 0) {
-            break;
-        }
+        // switch
 
-        std::cout << "Unknown option! Try 1, 2 or 0.\n";
+        switch(number) {
+            case 1: 
+                std::cout << "Hello en\n";
+                break;
+            case 2:
+                localeRus();
+                std::cout << "Привет";
+                break;
+            case 0:
+                std::cout << "GoodBye...\n";
+                break;
+            default:
+                std::cout << "Unknown option! Try 1, 2 or 0.\n";
+        } 
+        
 
-    } // while end
+        //std::cout << "Unknown option! Try 1, 2 or 0.\n";
 
-    // if(number == 1) {
-    //     std::cout << "Hello";
-    //     // add function
-    // } else if(number == 2) {
-    //     localeRus();
-    //     std::cout << "Привет";
-    // } else if(number == 0) {
-    //     std::cout << "\nExit to program..."; 
-    //     return 0;
-    // }
+    } while(number != 0); // while end
+
     
+    
+
+
 
     
     // clear buffer
