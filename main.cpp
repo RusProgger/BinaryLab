@@ -40,8 +40,17 @@ int main() {
 
     // choice
 
-    std::cout << "Your choice: ";
-    std::cin >> number;
+    while(true) {
+        std::cout << "Your choice: ";
+        std::cin >> number;
+
+        if(std::cin.fail()) {
+            std::cin.clear();
+            std::cin.ignore(100000, '\n');
+            std::cout << "Invalid input! Try again.\n";
+        }
+
+    } // while end
 
     // if(number == 1) {
     //     std::cout << "Hello";
