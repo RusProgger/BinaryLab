@@ -129,7 +129,7 @@ int main() {
 
     
     // Press any key to exit...
-    
+    std::cout << "Press any key to exit...";
 
     // clear buffer
     std::cin.ignore();
