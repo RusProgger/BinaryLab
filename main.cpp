@@ -65,22 +65,41 @@ int main() {
         // switch
 
         switch(number) {
-            case 1: 
-            while(true) {
-                std::cout << "Enter number: ";
+                case 1: {
+            std::cout << "Enter number (or -1 to back): ";
+
+            while (true)
+            {
                 std::cin >> num;
+
+                if (num == -1)
+                    break;
+
                 printBinary(num);
+
+                std::cout << "Enter number (or -1 to back): ";
             }
-                break;
+            break;
+        }
             case 2:
+            {
                 localeRus();
-            while(true) {
-                    std::cout << "Введите число: ";
-                std::cin >> num;
-                printBinary(num);
-            }
-                
+
+                std::cout << "Введите число (или -1 для выхода): ";
+
+                while (true)
+                {
+                    std::cin >> num;
+
+                    if (num == -1)
+                        break;
+
+                    printBinary(num);
+
+                    std::cout << "Введите число (или -1 для выхода): ";
+                }
                 break;
+            }
             case 0:
                 std::cout << "GoodBye...\n";
                 break;
