@@ -48,60 +48,75 @@ int main() {
 
     int number;
 
+    bool running = true;
+
     int num {0};
 
     // choice
 
-    do {
+    while(running) {
         std::cout << "Your choice: ";
-        std::cin >> number;
 
-        if(std::cin.fail()) {
-            std::cin.clear();
-            std::cin.ignore(100000, '\n');
-            std::cout << "Invalid input! Try again.\n";
-        }
+        if (!(std::cin >> number)) {
+
+        std::cin.clear();
+        std::cin.ignore(10000, '\n');
+
+        std::cout << "Invalid input! Try again.\n";
+        continue;
+    }
 
         // switch
 
         switch(number) {
-                case 1: {
+            case 1: {
             std::cout << "Enter number (or -1 to back): ";
 
             while (true)
             {
-                std::cin >> num;
+                if (!(std::cin >> num))
+                {
+                    std::cin.clear();
+                    std::cin.ignore(10000, '\n');
+                    std::cout << "Invalid input! Try again: ";
+                    continue;
+                }
 
                 if (num == -1)
                     break;
 
                 printBinary(num);
-
                 std::cout << "Enter number (or -1 to back): ";
             }
             break;
         }
-            case 2:
-            {
+
+                case 2: {
                 localeRus();
 
                 std::cout << "Введите число (или -1 для выхода): ";
 
-                while (true)
+            while (true)
+            {
+                if (!(std::cin >> num))
                 {
-                    std::cin >> num;
-
-                    if (num == -1)
-                        break;
-
-                    printBinary(num);
-
-                    std::cout << "Введите число (или -1 для выхода): ";
+                    std::cin.clear();
+                    std::cin.ignore(10000, '\n');
+                    std::cout << "Неверный ввод! Попробуйте снова: ";
+                    continue;
                 }
-                break;
+
+                if (num == -1)
+                    break;
+
+                printBinary(num);
+                std::cout << "Введите число (или -1 для выхода): ";
             }
+            break;
+        }
             case 0:
                 std::cout << "GoodBye...\n";
+                running = false;
                 break;
             default:
                 std::cout << "Unknown option! Try 1, 2 or 0.\n";
@@ -110,14 +125,11 @@ int main() {
 
         //std::cout << "Unknown option! Try 1, 2 or 0.\n";
 
-    } while(number != 0); // while end
+    } // while end
 
     
     
 
-
-
-    
     // clear buffer
     std::cin.ignore();
     // Pause
