@@ -27,6 +27,16 @@ void mainMenu()
     std::cout << "  0) Exit\n\n";
 }
 
+// BinaryLab 
+
+void printBinary(int n)
+{
+    for (int i = 7; i >= 0; i--) {
+        std::cout << ((n >> i) & 1);
+    }
+    std::cout << std::endl;
+}
+
 
 int main() {
 
@@ -34,6 +44,8 @@ int main() {
     mainMenu();
 
     int number;
+
+    int num {0};
 
     // choice
 
@@ -52,7 +64,11 @@ int main() {
 
         switch(number) {
             case 1: 
-                std::cout << "Hello en\n";
+            while(true) {
+                std::cout << "Enter number: ";
+                std::cin >> num;
+                printBinary(num);
+            }
                 break;
             case 2:
                 localeRus();
