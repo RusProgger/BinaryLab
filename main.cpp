@@ -29,11 +29,14 @@ void mainMenu()
 
 // BinaryLab 
 
-void printBinary(int n)
-{
+void printBinary(int n) {
+
+     std::cout << "Number " << n  << ": ";
+
     for (int i = 7; i >= 0; i--) {
         std::cout << ((n >> i) & 1);
     }
+   
     std::cout << std::endl;
 }
 
@@ -57,7 +60,6 @@ int main() {
             std::cin.clear();
             std::cin.ignore(100000, '\n');
             std::cout << "Invalid input! Try again.\n";
-            continue;
         }
 
         // switch
@@ -72,7 +74,12 @@ int main() {
                 break;
             case 2:
                 localeRus();
-                std::cout << "Привет";
+            while(true) {
+                    std::cout << "Введите число: ";
+                std::cin >> num;
+                printBinary(num);
+            }
+                
                 break;
             case 0:
                 std::cout << "GoodBye...\n";
