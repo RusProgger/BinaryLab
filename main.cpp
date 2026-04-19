@@ -48,7 +48,14 @@ int main() {
             std::cin.clear();
             std::cin.ignore(100000, '\n');
             std::cout << "Invalid input! Try again.\n";
+            continue;
         }
+
+        if(number == 1 || number == 2 || number == 0) {
+            break;
+        }
+
+        std::cout << "Unknown option! Try 1, 2 or 0.\n";
 
     } // while end
 
@@ -64,7 +71,7 @@ int main() {
     // }
     
 
-
+    
     // clear buffer
     std::cin.ignore();
     // Pause
