@@ -29,14 +29,38 @@ void mainMenu()
 
 // BinaryLab 
 
+// void printBinary(int n) {
+
+//     std::cout << "Number " << n  << ": ";
+
+//     for (int i = 31; i >= 0; i--) {
+//         std::cout << ((n >> i) & 1);
+//     }
+   
+//     std::cout << std::endl;
+// }
+
+
 void printBinary(int n) {
 
-    std::cout << "Number " << n  << ": ";
+    std::cout << "Number " << n << ": ";
 
-    for (int i = 31; i >= 0; i--) {
+    int start = 31;
+
+    
+    while (start > 0 && ((n >> start) & 1) == 0) {
+        start--;
+    }
+
+    // min 7 bit
+    if (start < 6) {
+        start = 6;
+    }
+
+    for (int i = start; i >= 0; i--) {
         std::cout << ((n >> i) & 1);
     }
-   
+
     std::cout << std::endl;
 }
 
