@@ -31,9 +31,9 @@ void mainMenu()
 
 void printBinary(int n) {
 
-     std::cout << "Number " << n  << ": ";
+    std::cout << "Number " << n  << ": ";
 
-    for (int i = 7; i >= 0; i--) {
+    for (int i = 31; i >= 0; i--) {
         std::cout << ((n >> i) & 1);
     }
    
