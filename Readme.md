@@ -17,6 +17,16 @@ The project allows users to input a decimal number and visualize its binary form
 
 This project was created as part of learning low-level programming concepts in C++ and computer graphics fundamentals.
 
+
+## 🌐 Language Support
+
+BinaryLab supports two interface languages:
+
+    - English
+    - Russian
+
+You can switch between languages in the program menu.
+
 ---
 
 ## 🇷🇺 Русский
