@@ -6,6 +6,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(BinaryLab
     src/main.cpp
+    src/locale_utils.cpp
+    src/menu.cpp
+    src/binary.cpp
 )
 
 target_include_directories(BinaryLab PRIVATE ${CMAKE_SOURCE_DIR}/include)
