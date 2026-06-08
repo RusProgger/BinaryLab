@@ -1,68 +1,8 @@
 #include <iostream>
-#include <iomanip>
-#include <windows.h>
 
-// locale
-
-void localeRus() {
-    SetConsoleOutputCP(CP_UTF8);
-	SetConsoleCP(CP_UTF8);
-}
-
-// mainMenu 
-
-void mainMenu()
-{
-    std::cout << "====================================\n";
-    std::cout << "            BinaryLab               \n";
-    std::cout << "====================================\n\n";
-
-    std::cout << "BinaryLab is a simple tool for working\n";
-    std::cout << "with binary representations of numbers.\n\n";
-
-    std::cout << "Select language:\n\n";
-
-    std::cout << "  1) English\n";
-    std::cout << "  2) Russian\n";
-    std::cout << "  0) Exit\n\n";
-}
-
-// BinaryLab 
-
-// void printBinary(int n) {
-
-//     std::cout << "Number " << n  << ": ";
-
-//     for (int i = 31; i >= 0; i--) {
-//         std::cout << ((n >> i) & 1);
-//     }
-   
-//     std::cout << std::endl;
-// }
-
-
-void printBinary(int n) {
-
-    std::cout << "Number " << n << ": ";
-
-    int start = 31;
-
-    
-    while (start > 0 && ((n >> start) & 1) == 0) {
-        start--;
-    }
-
-    // min 7 bit
-    if (start < 6) {
-        start = 6;
-    }
-
-    for (int i = start; i >= 0; i--) {
-        std::cout << ((n >> i) & 1);
-    }
-
-    std::cout << std::endl;
-}
+#include "menu.h"
+#include "binary.h"
+#include "locale_utils.h"
 
 
 int main() {
