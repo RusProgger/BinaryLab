@@ -17,6 +17,24 @@ The project allows users to input a decimal number and visualize its binary form
 
 This project was created as part of learning low-level programming concepts in C++ and computer graphics fundamentals.
 
+## ⚙️ Build & Run:
+
+### Requirements:
+- C++ compiler (clang++ / g++ / MSVC)
+- CMake (>= 3.10)
+
+### Build:
+
+```bash
+cmake -S . -B build
+cmake --build build
+```
+
+### Run program:
+
+```bash
+build\pcInfoTool.exe
+```
 
 ## 🌐 Language Support
 
