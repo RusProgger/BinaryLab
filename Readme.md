@@ -78,7 +78,7 @@ cmake --build build
 ### Запуск программы:
 
 ```bash
-build\pcInfoTool.exe
+build\BinaryLab.exe
 ```
 
 ## 🌐 Поддержка языков
