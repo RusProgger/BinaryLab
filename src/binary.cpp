@@ -1,7 +1,7 @@
 #include <iostream>
 #include "binary.h"
 
-void printBinary(int n)
+void printBinaryEng(int n)
 {
     std::cout << "Number " << n << ": ";
 
