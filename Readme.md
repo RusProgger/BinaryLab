@@ -33,7 +33,7 @@ cmake --build build
 ### Run program:
 
 ```bash
-build\pcInfoTool.exe
+build\BinaryLab.exe
 ```
 
 ## 🌐 Language Support
