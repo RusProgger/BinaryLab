@@ -49,7 +49,7 @@ int main() {
                 if (num == -1)
                     break;
 
-                printBinary(num);
+                printBinaryEng(num);
                 std::cout << "Enter number (or -1 to back): ";
             }
             break;
@@ -73,7 +73,7 @@ int main() {
                 if (num == -1)
                     break;
 
-                printBinary(num);
+                printBinaryRus(num);
                 std::cout << "Введите число (или -1 для выхода): ";
             }
             break;
