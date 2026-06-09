@@ -2,4 +2,5 @@
 
 #pragma once 
 
-void printBinary(int n);
+void printBinaryEng(int n);
+void printBinaryRus(int n);
