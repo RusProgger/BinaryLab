@@ -123,7 +123,7 @@ cmake --build build
 
 
 ```bash
-build\pcInfoTool.exe
+build\binary.exe
 ```
 
 ## 🌐 Підтримка мов
