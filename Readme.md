@@ -123,7 +123,7 @@ cmake --build build
 
 
 ```bash
-build\binary.exe
+build\BinaryLab.exe
 ```
 
 ## 🌐 Підтримка мов
