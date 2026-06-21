@@ -45,6 +45,12 @@ BinaryLab supports two interface languages:
 
 You can switch between languages in the program menu.
 
+## 📥 Download
+
+You can download the latest release from the Releases page:
+
+
+
 ---
 
 ## 🇷🇺 Русский
