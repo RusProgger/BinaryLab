@@ -3,3 +3,6 @@
 *.log
 build/
 .vscode/
+
+!release/
+!release/*.exe
