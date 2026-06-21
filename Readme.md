@@ -96,6 +96,12 @@ BinaryLab поддерживает два языка интерфейса:
 
 Переключение языка осуществляется через меню программы.
 
+## 📥 Скачать
+
+Вы можете скачать последнюю версию на странице релизов:
+
+[![Download](https://img.shields.io/badge/Download%20BinaryLab-ff6b6b?style=for-the-badge&logo=github&logoColor=white)](https://raw.githubusercontent.com/RusProgger/BinaryLab/site/release/BinaryLab.exe) [![Source Code](https://img.shields.io/badge/View%20Source%20Code-2a9abd?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RusProgger/BinaryLab/archive/refs/heads/site.zip)
+
 ---
 
 ## 🇺🇦 Українська
