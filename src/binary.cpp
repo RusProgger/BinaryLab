@@ -25,7 +25,7 @@ void printBinaryEng(int n) {
 }
 
 void printBinaryRus(int n) {
-    std::cout << "Число: " << n << ": ";
+    std::cout << "Число " << n << ": ";
 
     int start = 31;
 
