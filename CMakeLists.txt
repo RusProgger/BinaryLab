@@ -12,3 +12,8 @@ add_executable(BinaryLab
 )
 
 target_include_directories(BinaryLab PRIVATE ${CMAKE_SOURCE_DIR}/include)
+
+#  fold release
+set_target_properties(BinaryLab PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/release
+)
